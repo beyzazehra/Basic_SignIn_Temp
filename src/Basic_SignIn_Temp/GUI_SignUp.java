@@ -92,8 +92,9 @@ public class GUI_SignUp extends JFrame implements ActionListener {
 
 			@Override
 			public void keyReleased(KeyEvent e) {
-				// TODO Auto-generated method stub
+				
 				String password = new String(pass.getPassword());
+				// regex for password validation
 				if (!password.matches("^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d).+$")) {
 					lblPasswordWarning.setVisible(true);
 				} else {
